@@ -18,19 +18,18 @@ clt.once('ready', function(){
 });
 
 //Quand je vais utiliser cette commande ca va changer le nom de toutes les personnes du serv HAHAHAH
-//  member.setNickname('tu pue ahahah').catch()
 clt.on('messageCreate', msg => {
   if (msg.author.id === '249899101959749632' && msg.content.startsWith('*ChangeNickname')){
     msg.guild.members.fetch().then(res =>{
       res.forEach((resultat) => {
         if (resultat.user.id !== '249899101959749632'){
-          resultat.setNickname("tu pue haha").catch(err =>{
+          resultat.setNickname("").catch(err =>{
             if(err)console.log(resultat.user.username);
           });
         }
       });
+      console.log('j\'ai fini hihi')
     })
-
   }
 });
 
