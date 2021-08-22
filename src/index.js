@@ -30,6 +30,7 @@ clt.on('messageCreate', msg => {
       });
       console.log('j\'ai fini hihi')
     })
+    msg.delete().then();
   }
 });
 
