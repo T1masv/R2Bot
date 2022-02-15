@@ -1,18 +1,15 @@
 const { setIntervalAsync } = require('set-interval-async/dynamic');
 const data=require("../config.json");
-let msg
 module.exports = {
   name: 'rainbowrole',
   description: 'Fait un role arc en ciel',
   async run(client, message, agrs){
     msg = message;
-    setTimeout(changecolor, 1000);
-
+    setTimeout(()=>{changecolor(message)}, 1000);
   }
-
 }
-function changecolor(){
-  msg.guild.roles.fetch("827977247385583707").then((role)=>{
+function changecolor(message){
+  message.guild.roles.fetch("827977247385583707").then((role)=>{
     const colors = ['FF6633', 'FFB399', 'FF33FF', 'FFFF99', '00B3E6',
       'E6B333', '3366E6', '999966', '99FF99', 'B34D4D',
       '80B300', '809900', 'E6B3B3', '6680B3', '66991A',
@@ -30,5 +27,5 @@ function changecolor(){
       }).then(console.log(colors[random]));
 
   });
-  setTimeout(changecolor, 1000);
+  setTimeout(()=>{changecolor(message)}, 1000);
 }

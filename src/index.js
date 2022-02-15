@@ -19,5 +19,5 @@ client.events = new Collection();
     require(`./handlers/${handler}.js`)(client,Discord);
 });
 
-// //bot login
+//bot login
 client.login(data.TOKEN).then();
