@@ -1,3 +1,4 @@
+const data=require("../config.json");
 module.exports = {
   name : 'chut',
   description : "disconnect user from voiceChannels",
