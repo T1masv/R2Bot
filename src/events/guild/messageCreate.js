@@ -10,7 +10,6 @@ module.exports = (Discord, client, message ) => {
 
     const command = client.commands.get(cmd);
 
-    console.log(cmd)
     if(command) command.run(client, message, args);
 
 

@@ -86,34 +86,7 @@ client.events = new Collection();
 //   }
 // });
 //
-// // client.on('messageCreate', (msg)=> {
-// //   if(msg.author.id === '249899101959749632' && msg.content.startsWith('*dl')){
-// //     const args = msg.content.split(/ +/);
-// //     const commande = args.shift();
-// //     const http = require('https');
-// //     const fs = require('fs');
-// //
-// //
-// //     const url = `https://rule34.xxx/index.php?page=dapi&s=post&q=index&id=${args}`; // link to file you want to download
-// //     const path = 'D:/prive/Mon petit plaisir/R34' // where to save a file
-// //
-// //     const request = http.get(url, function(response) {
-// //         if (response.statusCode === 200) {
-// //           const parser = new DOMParser();
-// //           const rep = parser.parseFromString(reponse,"text/xml");
-// //           const data = rep.getElementsByTagName('post').getAttribute('file_url');
-// //           console.log(data);
-// //           console.log(response);
-// //             var file = fs.writeFile( file, data);
-// //             response.pipe(file);
-// //             console.log(file);
-// //         }
-// //         request.setTimeout(60000, function() { // if after 60s file not downlaoded, we abort a request
-// //             request.abort();
-// //         });
-// //     });
-// //   }
-// // })
+
 //
 // client.on('messageCreate', (msg) =>{
 //   if(msg.author.id === '249899101959749632' && msg.content.startsWith('*kv')){

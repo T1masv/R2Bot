@@ -5,7 +5,7 @@ module.exports = {
   description: 'Fait un role arc en ciel',
   async run(client, message, agrs){
     msg = message;
-    setTimeout(changecolor, 500);
+    setTimeout(changecolor, 1000);
 
   }
 
@@ -26,8 +26,8 @@ function changecolor(){
       let random = Math.floor(Math.random() * colors.length);
       role.edit({
         color: colors[random]
-      })
-      console.log(colors[random]);
+      }).then(console.log(colors[random]));
+
   });
-  setTimeout(changecolor, 500);
+  setTimeout(changecolor, 1000);
 }
