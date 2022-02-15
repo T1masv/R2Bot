@@ -1,4 +1,21 @@
 {
     "prefix":"r.",
-    "TOKEN":"ODc1ODczNjAzMDkzMTU1ODcw.YRb22w.LodV50FDCwU4qjL8X1ZR8pYIkYM"
+    "TOKEN":"ODc1ODczNjAzMDkzMTU1ODcw.YRb22w.LodV50FDCwU4qjL8X1ZR8pYIkYM",
+    "ids":[
+      {
+        "name": "tim",
+        "id":"249899101959749632",
+        "admin": true
+      },
+      {
+        "name": "ruben",
+        "id":"214429278228447232",
+        "admin": false
+      },
+      {
+        "name": "warren",
+        "id":"382173824034144266",
+        "admin": false
+      }
+    ]
 }

@@ -1,4 +1,5 @@
-const { setIntervalAsync } = require('set-interval-async/dynamic')
+const { setIntervalAsync } = require('set-interval-async/dynamic');
+const data=require("../config.json");
 let msg
 module.exports = {
   name: 'rainbowrole',
