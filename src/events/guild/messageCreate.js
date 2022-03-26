@@ -12,6 +12,4 @@ module.exports = (Discord, client, message ) => {
 
     if(command) command.run(client, message, args);
 
-
-
 }

@@ -8,8 +8,9 @@ module.exports = {
       const channel = await message.guild.channels.fetch(CHANNEL_ID);
       if (!channel.isVoice()) return;
       for(const member of channel.members){
-        member[1].voice.disconnect().then(x=>console.log(`J\'ai exclu ${member.nickname !== null ? member.nickname : member.user.username}`););
+        member[1].voice.disconnect().then(x=>console.log(`J\'ai exclu ${x.nickname ?? x.user.username}`));
       }
+      message.delete();
     } catch (error){
       console.log(`${error}`);
     }
